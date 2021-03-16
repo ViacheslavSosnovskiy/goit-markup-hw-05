@@ -110,8 +110,6 @@ img {
     display: flex;
     text-align: center;
     margin-left: auto;
-
-    /* transition:  250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .contacts-list .item:not(:last-child){
@@ -135,7 +133,9 @@ img {
     fill:var(--accent-color);
 }
 
-
+/* .contacts-list .info {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 /* ============== ХЕДЕР  ============== */
 
