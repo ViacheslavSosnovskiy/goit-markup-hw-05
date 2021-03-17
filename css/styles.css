@@ -554,13 +554,13 @@ button {
 /* ============== ССЫЛКИ  работ портфолио ============== */
 
 .works-list h3 {
-    color:var(--primary-text-color);
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin-bottom: 4px;
+    color:var(--primary-text-color);
 }
 
 .works-list p {
@@ -601,6 +601,15 @@ button {
 .section-works .container {
     padding-bottom: 94px;
 }
+
+.works-wrapper {
+    
+}
+
+
+
+
+
 
 
 /*  backdrop  */
