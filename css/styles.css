@@ -33,6 +33,10 @@ img {
     display:block;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -75,27 +79,23 @@ img {
 
 /* ==============  ССЫЛКИ NAV  ============== */
 
-.link {
-    text-decoration: none;
-}
+ .header .twin {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-.navigation-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+} 
+
+.navigation-list a {
     color:var(--primary-text-color);
-
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 
-.contacts-list .info {
+.contacts-list a {
     color:var(--title-text-color);
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 
 /*  флексы шапки  */
@@ -132,10 +132,6 @@ img {
 .contacts-list .info:focus .icons-link {
     fill:var(--accent-color);
 }
-
-/* .contacts-list .info {
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 /* ============== ХЕДЕР  ============== */
 
@@ -218,7 +214,6 @@ button {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    
 }
 
 .advantages p {
@@ -259,7 +254,6 @@ button {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    
 }
 
 .occupation-list {
@@ -341,7 +335,6 @@ button {
 
     font-size: 16px;
     line-height: 1.18;
-    
 }
 
 .card {
@@ -392,7 +385,7 @@ button {
 
 .svg-logo {
     fill: #AFB1B8;
-}
+} 
 
 .clients-list .item:not(:last-child){
     margin-right: 30px;
@@ -437,7 +430,7 @@ button {
     margin-bottom: 9px;
 }
 
-.footer-contacts .link {
+.footer-contacts .info {
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
@@ -513,7 +506,6 @@ button {
     justify-content: center;
     padding-top: 94px;
     padding-bottom: 56px;
-    
 }
 
 .section-buttons button {
@@ -581,8 +573,7 @@ button {
 
 .works-list .item:hover,
 .works-list .item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
 }
 
 .section-works .container {
