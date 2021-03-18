@@ -642,3 +642,9 @@ button {
     background-color: #fff;
     border: 2px solid var(--accent-color);
 }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
