@@ -310,6 +310,8 @@ button {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .svg-icons,
@@ -608,8 +610,8 @@ button {
     top: 0;
     left: 0;
     height: 100%;
-    /* color:var(--primary-white-color); */
     background-color: rgba(33, 150, 243, 0.9);
+    color:var(--primary-white-color);
     padding: 63px 24px; 
     overflow: scroll;
 
