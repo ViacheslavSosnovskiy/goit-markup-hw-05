@@ -599,16 +599,30 @@ button {
 }
 
 .works-wrapper {
-    
+    position : relative;
+    overflow: hidden;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* color:var(--primary-white-color); */
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px; 
+    overflow: scroll;
 
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.link-wrapper:hover .overlay,
+.link-wrapper:focus .overlay {
+    transform: translateY(0%);
+}
 
-
-
-
-/*  backdrop  */
+/*==============  backdrop  =================*/
 
 .backdrop {
     position: fixed;
@@ -616,7 +630,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 165, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden {
@@ -637,9 +651,12 @@ button {
 }
 
 .modal-batton {
-    border-radius: 50%;
     margin-left: auto;
-    padding: 12px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    padding: 10px;
+    
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
