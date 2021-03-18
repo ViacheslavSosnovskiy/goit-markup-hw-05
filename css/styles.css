@@ -633,6 +633,7 @@ button {
     min-width: 528px;
     min-height: 581px;
     background-color: #fff;
+    margin-top: 220px;
 }
 
 .modal-batton {
@@ -640,7 +641,7 @@ button {
     margin-left: auto;
     padding: 12px;
     background-color: #fff;
-    border: 2px solid var(--accent-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .is-hidden {
