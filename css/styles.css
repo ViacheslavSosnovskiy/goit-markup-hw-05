@@ -238,6 +238,7 @@ button {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .advantages p {
@@ -651,7 +652,6 @@ button {
     min-width: 528px;
     min-height: 581px;
     background-color: #fff;
-    margin-top: 220px;
 }
 
 .modal-batton {
