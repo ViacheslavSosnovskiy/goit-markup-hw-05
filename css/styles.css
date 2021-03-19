@@ -37,6 +37,13 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: inherit;
+    cursor: pointer;
+    display: block;
+    border: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -203,13 +210,6 @@ a {
 
 /* ==============  КНОПКИ   ============== */
 
-button {
-    font-family: inherit;
-    cursor: pointer;
-    display: block;
-    border: none;
-}
-
 .section-hero button {
     text-align: center;
     margin: 0 auto;
@@ -328,12 +328,12 @@ button {
 }
 
 .social-link {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -443,12 +443,12 @@ button {
 
 .item-clients:hover {
     border-color:var(--accent-color);
-    transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-clients:hover .svg-logo {
     fill: var(--accent-color);
-    transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ============== FOOTER ============== */
@@ -523,10 +523,6 @@ button {
     background-color: var(--accent-color);
 }
 
-.social-item:hover .svg-icons{
-    transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
 
 
 /* страничка портфолио*/
@@ -674,29 +670,28 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
     width: 528px;
     height: 581px;
+    transform: translate(-50%, -50%);
     background-color: #fff;
-}
-
-.button-svg {
-    width: 10px;
-    height: 10px;
-    fill: #000;
+    border-radius: 4px
 }
 
 .modal-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     margin-left: auto;
     border-radius: 50%;
     margin-top: 8px;
     margin-right: 8px;
+    outline: none;
 
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
