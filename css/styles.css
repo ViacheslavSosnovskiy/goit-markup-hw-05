@@ -180,7 +180,7 @@ a {
     background-color:#2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/герой/Img.jpg")
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/герой/Img1.jpg");
 }
 
 .section-hero h1 {
@@ -289,6 +289,29 @@ button {
     margin-right: 30px;
 }
 
+
+/*  встплывающее окно  */
+.occupation-wrapper {
+    position: relative;
+}
+
+.occupation-text {
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+
+}
 /* ============= Наша команда / svg  =============== */
 
 .svg-icons {
@@ -592,7 +615,7 @@ button {
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
-}
+} 
 
 .works-list .item:hover,
 .works-list .item:focus {
@@ -608,7 +631,7 @@ button {
     overflow: hidden;
 }
 
-.overlay {
+.works-list .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -616,7 +639,7 @@ button {
     background-color: rgba(33, 150, 243, 0.9);
     color:var(--primary-white-color);
     padding: 63px 24px; 
-    overflow: scroll;
+    /* overflow: scroll; */
 
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -625,7 +648,7 @@ button {
 .link-wrapper:hover .overlay,
 .link-wrapper:focus .overlay {
     transform: translateY(0%);
-}
+} 
 
 /*==============  backdrop  =================*/
 
@@ -649,17 +672,22 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
     background-color: #fff;
 }
 
-.modal-batton {
+.modal-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
     margin-left: auto;
     margin-top: 8px;
     margin-right: 8px;
     border-radius: 50%;
-    padding: 10px;
+    padding: 9px 10px;
     
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
