@@ -98,7 +98,7 @@ button {
 } 
 
 .navigation-list a {
-    position: relative;
+    position: relative;  /*для подчеркивания*/
     color:var(--primary-text-color);
 }
 
